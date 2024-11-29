@@ -1,4 +1,4 @@
-Swagger UI with OAuth Authorization Code Flow (PKCE)
+**Swagger UI with OAuth Authorization Code Flow (PKCE)**
 
 This repository demonstrates how to customize Swagger UI to support the OAuth Authorization Code flow with PKCE.
 
