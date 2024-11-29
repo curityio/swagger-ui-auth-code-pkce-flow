@@ -1,0 +1,34 @@
+<config xmlns="http://tail-f.com/ns/config/1.0">
+    <profiles xmlns="https://curity.se/ns/conf/base">
+    <profile>
+    <id>oauth-dev</id>
+    <type xmlns:as="https://curity.se/ns/conf/profile/oauth">as:oauth-service</type>
+      <settings>
+      <authorization-server xmlns="https://curity.se/ns/conf/profile/oauth">
+      <client-store>
+      <config-backed>
+      <client>
+        <id>swagger-public</id>
+        <no-authentication>true</no-authentication>
+        <redirect-uris>http://localhost:8080/swagger/oauth2-redirect.html</redirect-uris>
+        <proof-key>
+          <require-proof-key>true</require-proof-key>
+        </proof-key>
+        <refresh-token-ttl>disabled</refresh-token-ttl>
+        <user-authentication>
+        </user-authentication>
+        <allowed-origins>*</allowed-origins>
+        <allowed-origins>http://localhost:8080/swagger/</allowed-origins>
+        <capabilities>
+          <code>
+          </code>
+        </capabilities>
+        <validate-port-on-loopback-interfaces>true</validate-port-on-loopback-interfaces>
+      </client>
+      </config-backed>
+      </client-store>
+      </authorization-server>
+      </settings>
+  </profile>
+  </profiles>
+</config>
